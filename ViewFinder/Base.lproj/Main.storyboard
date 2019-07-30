@@ -13,8 +13,8 @@
         <!--MemeAGram-->
         <scene sceneID="8Jk-J6-d32">
             <objects>
-                <tableViewController title="MemeAGram" id="wyQ-wn-Bbt" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="10m-KP-K7k">
+                <tableViewController title="MemeAGram" id="wyQ-wn-Bbt" customClass="PostTableViewController" customModule="ViewFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="10m-KP-K7k" customClass="PostTableViewController">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -37,7 +37,7 @@
                     <navigationItem key="navigationItem" id="5tj-in-mVT">
                         <barButtonItem key="rightBarButtonItem" title="Add New Photo" id="4Ae-3M-3F0">
                             <connections>
-                                <segue destination="p2R-dc-EX0" kind="show" id="Oke-NW-q9z"/>
+                                <segue destination="p2R-dc-EX0" kind="show" id="xqh-B8-z4J"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -60,7 +60,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Photo Library"/>
                                 <connections>
-                                    <action selector="chooseGallery1:" destination="p2R-dc-EX0" eventType="touchUpInside" id="R7g-2o-rQL"/>
+                                    <action selector="gallery:" destination="p2R-dc-EX0" eventType="touchUpInside" id="RYP-Jf-d4m"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2019-07-25 at 3.04.53 PM" translatesAutoresizingMaskIntoConstraints="NO" id="pqY-OC-Sog">
@@ -80,7 +80,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
-                                    <action selector="savebutton:" destination="p2R-dc-EX0" eventType="touchUpInside" id="dHH-07-Iip"/>
+                                    <action selector="savebutton:" destination="p2R-dc-EX0" eventType="touchUpInside" id="42o-Pr-ugT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Va-gk-bbC">
@@ -88,7 +88,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Camera"/>
                                 <connections>
-                                    <action selector="cameraTapped:" destination="p2R-dc-EX0" eventType="touchUpInside" id="ec5-v9-zUn"/>
+                                    <action selector="cameraClickHere:" destination="p2R-dc-EX0" eventType="touchUpInside" id="j0M-XZ-F1B"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -96,6 +96,10 @@
                         <viewLayoutGuide key="safeArea" id="RAW-UB-vHS"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add Photo" id="diy-3Z-b8D"/>
+                    <connections>
+                        <outlet property="captionText" destination="GXa-R4-xES" id="2hK-dK-DyQ"/>
+                        <outlet property="shownImage" destination="pqY-OC-Sog" id="soU-U4-rdh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="svt-Qg-FCF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
