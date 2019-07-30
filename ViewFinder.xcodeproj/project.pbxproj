@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		18E1A76222EF70E2009D686A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E1A76122EF70E2009D686A /* AppDelegate.swift */; };
-		18E1A76422EF70E2009D686A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E1A76322EF70E2009D686A /* ViewController.swift */; };
 		18E1A76722EF70E2009D686A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E1A76522EF70E2009D686A /* Main.storyboard */; };
 		18E1A76A22EF70E2009D686A /* ViewFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18E1A76822EF70E2009D686A /* ViewFinder.xcdatamodeld */; };
 		18E1A76C22EF70E2009D686A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E1A76B22EF70E2009D686A /* Assets.xcassets */; };
 		18E1A76F22EF70E2009D686A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E1A76D22EF70E2009D686A /* LaunchScreen.storyboard */; };
+		18E1A77922EF869A009D686A /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E1A77822EF869A009D686A /* AddPhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18E1A75E22EF70E2009D686A /* ViewFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E1A76122EF70E2009D686A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18E1A76322EF70E2009D686A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18E1A76622EF70E2009D686A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18E1A76922EF70E2009D686A /* ViewFinder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ViewFinder.xcdatamodel; sourceTree = "<group>"; };
 		18E1A76B22EF70E2009D686A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18E1A76E22EF70E2009D686A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18E1A77022EF70E2009D686A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E1A77822EF869A009D686A /* AddPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				18E1A76122EF70E2009D686A /* AppDelegate.swift */,
-				18E1A76322EF70E2009D686A /* ViewController.swift */,
 				18E1A76522EF70E2009D686A /* Main.storyboard */,
 				18E1A76B22EF70E2009D686A /* Assets.xcassets */,
 				18E1A76D22EF70E2009D686A /* LaunchScreen.storyboard */,
 				18E1A77022EF70E2009D686A /* Info.plist */,
 				18E1A76822EF70E2009D686A /* ViewFinder.xcdatamodeld */,
+				18E1A77822EF869A009D686A /* AddPhotoViewController.swift */,
 			);
 			path = ViewFinder;
 			sourceTree = "<group>";
@@ -138,8 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E1A77922EF869A009D686A /* AddPhotoViewController.swift in Sources */,
 				18E1A76A22EF70E2009D686A /* ViewFinder.xcdatamodeld in Sources */,
-				18E1A76422EF70E2009D686A /* ViewController.swift in Sources */,
 				18E1A76222EF70E2009D686A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
